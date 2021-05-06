@@ -1,0 +1,3 @@
+/home/ppsoln/work/trialcpp/src/build/CMakeFiles/rebuild_cache.dir
+/home/ppsoln/work/trialcpp/src/build/CMakeFiles/mytest2.dir
+/home/ppsoln/work/trialcpp/src/build/CMakeFiles/edit_cache.dir

@@ -1,17 +1,13 @@
 // main.cpp
 
 #include<iostream>
-
 #include "myHeader.h"
+#include "Vectors.hpp"
+
+using namespace std;
 
 
-// test
-class Vertor3D{
-private:
-    double x,y,z;
 
-
-};
 
 int main(){
     std::cout<<"Hello Wordl!\n";
@@ -20,5 +16,7 @@ int main(){
     std::cout<<"\n";
 
     Vector3D t;
+    t.SetVec3D(3.0 ,1.0 ,2.0);
+    t.ShowVec3D(t);
     return 0;
 }

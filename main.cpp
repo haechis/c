@@ -15,8 +15,15 @@ int main(){
     std::cout<<"func1(1): "<<func1(1);
     std::cout<<"\n";
 
-    Vector3D t;
-    t.SetVec3D(3.0 ,1.0 ,2.0);
-    t.ShowVec3D(t);
+    Vector3D a;
+    a.SetVec3D(3.0 ,1.0 ,2.0);
+    a.ShowVec3D();
+    
+    Vector3D b;
+    b.SetVec3D(1, 2, 3);
+    b.ShowVec3D();
+
+    double c = a.dot(b);
+    printf("c: %5.3f \n", c);
     return 0;
 }

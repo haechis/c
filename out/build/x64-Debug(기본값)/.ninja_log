@@ -1,0 +1,14 @@
+# ninja log v5
+7	59	642009790	CMakeFiles/mytest2.dir/myHeader.cpp.obj	890246c6ce1b40
+14	101	642009790	CMakeFiles/mytest2.dir/Vectors.cpp.obj	a8efb900d0e74a7
+0	349	642009790	CMakeFiles/mytest2.dir/main.cpp.obj	5b2b2a9639ff4c3e
+350	686	642009791	mytest2.exe	31d0fd3a71f389e5
+9	102	642010276	CMakeFiles/mytest2.dir/Vectors.cpp.obj	a8efb900d0e74a7
+0	332	642010276	CMakeFiles/mytest2.dir/main.cpp.obj	5b2b2a9639ff4c3e
+333	509	642010276	mytest2.exe	31d0fd3a71f389e5
+0	101	642010316	CMakeFiles/mytest2.dir/Vectors.cpp.obj	a8efb900d0e74a7
+9	331	642010316	CMakeFiles/mytest2.dir/main.cpp.obj	5b2b2a9639ff4c3e
+331	506	642010317	mytest2.exe	31d0fd3a71f389e5
+8	94	642010316	CMakeFiles/mytest2.dir/Vectors.cpp.obj	a8efb900d0e74a7
+0	324	642010317	CMakeFiles/mytest2.dir/main.cpp.obj	5b2b2a9639ff4c3e
+324	472	642010317	mytest2.exe	31d0fd3a71f389e5

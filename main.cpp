@@ -23,7 +23,12 @@ int main(){
     b.SetVec3D(1, 2, 3);
     b.ShowVec3D();
 
+    // dot product 
     double c = a.dot(b);
     printf("c: %5.3f \n", c);
+    
+    // scale L2-norm
+    printf("L2-norm: %5.3f \n", a.Scale());
+
     return 0;
 }

@@ -19,9 +19,11 @@ void Vector3D::ShowVec3D(){
 }
 
 double Vector3D::dot(Vector3D v) {
-    
-    
     return (v.x * this->x, v.y * this->y, v.z * this->z);
+}
+
+double Vector3D::Scale() {
+    return (this->x * this->x + this->y * this->y + this->z * this->z);
 }
 
 // void Vector3D::Vector3D(double x, double y, double z){

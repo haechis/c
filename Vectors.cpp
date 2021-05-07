@@ -38,6 +38,8 @@ void Matrix3D::SetMat3D(Vector3D X,Vector3D Y,Vector3D Z)
     this->arr[0] = X;
     this->arr[1] = Y;
     this->arr[2] = Z;
+
+    // test
 }
 void Matrix3D::ShowMat3D(){
     // array size

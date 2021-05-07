@@ -15,6 +15,7 @@ int main(){
     a.SetVec3D(1,2,3);
     b.SetVec3D(2,4,5);
     c.SetVec3D(4,2,3);
+    VectorTest();
     Matrix3D m;    
     m.SetMat3D(a,b,c);
     m.ShowMat3D();
@@ -31,7 +32,7 @@ void printTest(){
     return;
 }
 
-void VectorTets(){
+void VectorTest(){
     Vector3D a;
     a.SetVec3D(3.0 ,1.0 ,2.0);
     a.ShowVec3D();

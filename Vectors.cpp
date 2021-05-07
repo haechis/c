@@ -10,13 +10,13 @@ void Vector3D::SetVec3D(double x, double y, double z){
     this->y = y;
     this->z = z;
 }
-void Vector3D::SetVec3D(Vector3D v){
-    this->x = v.x;
-    this->y = v.y;
-    this->z = v.z;
-    q = v.x;
-    w = v.y;
-    e = v.z;
+void Vector3D::SetVec3D(){
+    //this->x = x;
+    //this->y = y;
+    //this->z = z;
+    q = this->x;
+    w = this->y;
+    e = this->z;
 }
 
 void Vector3D::ShowVec3D(){
@@ -32,22 +32,21 @@ double Vector3D::Scale() {
 }
 void Matrix3D::SetMat3D(Vector3D X,Vector3D Y,Vector3D Z)
 {
+    X.SetVec3D();
+    Y.SetVec3D();
+    Z.SetVec3D();
     this->arr[0] = X;
     this->arr[1] = Y;
     this->arr[2] = Z;
 }
 void Matrix3D::ShowMat3D(){
-    Vector3D temp = this->arr[0];
-    
-    printf("%5.3f \n",temp.q);
-    // for(int i = 0;i<3;i++)
-    //     {
-            
-    //         Vector3D tmp; // =  this->arr[0];
-    //         tmp.SetVec3D(arr[0]);
-    //         double q = this->tmp.x;
-    //         // printf("%5.3f %5.3f %5.3f \n",this->arr[0].this->x,this->arr[0].y,this->arr[0].z);
-    //         printf("%5.3f %5.3f %5.3f \n",this->arr[0].x,tmp.y,t.z);
-    //     }
+    // array size
+    printf("%d \n", sizeof(this->arr)/ sizeof(*this->arr));
+    for (int i = 0; i < 3; i++) {
+         
+        printf("%5.3f %5.3f %5.3f \n", this->arr[i].q, this->arr[i].w, this->arr[i].e );
+
+    }
+ 
 }
 

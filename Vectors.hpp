@@ -5,12 +5,12 @@ class Vector3D{
 private:
     double x,y,z;
 public:
- double q,w,e;
-void SetVec3D(double x, double y, double z);
-void SetVec3D(Vector3D v);
-void ShowVec3D();
-double dot(Vector3D v);
-double Scale();
+    double q, w, e;
+    void SetVec3D(double x, double y, double z);
+    void SetVec3D();
+    void ShowVec3D();
+    double dot(Vector3D v);
+    double Scale();
 };
 
 // 3x3 matrix.
@@ -19,9 +19,11 @@ double Scale();
 // z(1) z(2) z(3)
 class Matrix3D : public Vector3D{
 private:
+    double  i, j, k;
     Vector3D arr[3];
-    Vector3D t;
 public:
+    
+    Vector3D t;
     
     void SetMat3D(Vector3D x,Vector3D y,Vector3D z);
     void ShowMat3D();

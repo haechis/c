@@ -12,9 +12,9 @@ void VectorTest();
 
 int main(){
     Vector3D a,b,c;
-    a.SetVec3D(1,2,3);
-    b.SetVec3D(2,4,5);
-    c.SetVec3D(4,2,3);
+    a.SetVec3D(1.0,2.0,3.0);
+    b.SetVec3D(2.0,4.0,5.0);
+    c.SetVec3D(4.0,2.0,3.0);
     VectorTest();
     Matrix3D m;    
     m.SetMat3D(a,b,c);

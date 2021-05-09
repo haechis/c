@@ -1,7 +1,7 @@
 // main.cpp
 
 #include<iostream>
-#include "myHeader.h"
+#include "myHeader.hpp"
 #include "Vectors.hpp"
 
 using namespace std;

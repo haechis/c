@@ -1,0 +1,7 @@
+# ninja log v5
+9	85	642252707	CMakeFiles/mytest2.dir/myHeader.cpp.obj	890246c6ce1b40
+1	101	642252707	CMakeFiles/mytest2.dir/Vectors.cpp.obj	a8efb900d0e74a7
+17	355	642252707	CMakeFiles/mytest2.dir/main.cpp.obj	5b2b2a9639ff4c3e
+356	672	642252708	mytest2.exe	31d0fd3a71f389e5
+1	308	642252839	CMakeFiles/mytest2.dir/main.cpp.obj	5b2b2a9639ff4c3e
+309	467	642252839	mytest2.exe	31d0fd3a71f389e5

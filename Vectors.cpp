@@ -54,6 +54,12 @@ void Matrix3D::ShowMat3D(){
 
 bool Matrix3D::isFullRank()
 {
+    // a <-> b 비교
+
+    // a <-> c 비교
+
+    // b <-> c 비교
+
 
     return true;
 }

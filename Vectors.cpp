@@ -52,3 +52,9 @@ void Matrix3D::ShowMat3D(){
  
 }
 
+bool Matrix3D::isFullRank()
+{
+
+    return true;
+}
+

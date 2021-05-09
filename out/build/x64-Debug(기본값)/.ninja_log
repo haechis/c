@@ -65,3 +65,7 @@
 86	221	642084594	mytest2.exe	31d0fd3a71f389e5
 0	301	642084626	CMakeFiles/mytest2.dir/main.cpp.obj	5b2b2a9639ff4c3e
 302	446	642084626	mytest2.exe	31d0fd3a71f389e5
+0	334	642248273	CMakeFiles/mytest2.dir/myHeader.cpp.obj	890246c6ce1b40
+8	599	642248274	CMakeFiles/mytest2.dir/main.cpp.obj	5b2b2a9639ff4c3e
+0	86	642248316	CMakeFiles/mytest2.dir/Vectors.cpp.obj	a8efb900d0e74a7
+86	266	642248316	mytest2.exe	31d0fd3a71f389e5

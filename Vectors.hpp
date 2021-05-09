@@ -27,4 +27,7 @@ public:
     
     void SetMat3D(Vector3D x,Vector3D y,Vector3D z);
     void ShowMat3D();
+    bool isFullRank();
 };
+
+ 

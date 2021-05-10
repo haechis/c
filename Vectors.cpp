@@ -30,6 +30,8 @@ double Vector3D::dot(Vector3D v) {
 double Vector3D::Scale() {
     return (this->x * this->x + this->y * this->y + this->z * this->z);
 }
+
+
 void Matrix3D::SetMat3D(Vector3D X,Vector3D Y,Vector3D Z)
 {
     X.SetVec3D();
@@ -52,9 +54,20 @@ void Matrix3D::ShowMat3D(){
  
 }
 
+void Matrix3D::MatMultiply(int i , double p) {
+    this->arr[i].q *= p;
+    this->arr[i].w *= p;
+    this->arr[i].e *= p;
+}
+
 bool Matrix3D::isFullRank()
 {
     // a <-> b 비교
+    double p = this->arr[0].q / this->arr[0].w;
+    
+    MatMultiply(1, p);
+    MatMultiply(2, p);
+
 
     // a <-> c 비교
 

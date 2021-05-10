@@ -12,15 +12,17 @@ void VectorTest();
 
 int main(){
     Vector3D a,b,c;
-    a.SetVec3D(1.0,2.0,3.0);
-    b.SetVec3D(2.0,4.0,5.0);
-    c.SetVec3D(4.0,2.0,3.0);
+    a.SetVec3D(8.0,4.0,4.0);
+    b.SetVec3D(4.0,2.0,1.0);
+    c.SetVec3D(2.0,2.0,1.0);
     VectorTest(); 
 
     Matrix3D m;    
     m.SetMat3D(a,b,c);
     m.ShowMat3D();
     bool tf = m.isFullRank();
+    m.ShowMat3D();
+
     return 0;
 }
 

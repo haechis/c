@@ -13,7 +13,7 @@ public:
     double Scale();
     Vector3D PlusVec3D(Vector3D a, Vector3D b);
     Vector3D MinusVec3D(Vector3D a, Vector3D b);
-
+    Vector3D MinusVec3D(Vector3D a, Vector3D b, int i);
 };
 
 // 3x3 matrix.

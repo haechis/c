@@ -32,6 +32,24 @@ Vector3D Vector3D::MinusVec3D(Vector3D a, Vector3D b) {
     k.SetVec3D();
     return k;
 }
+Vector3D Vector3D::MinusVec3D(Vector3D a, Vector3D b, int i) {
+    Vector3D k;
+    if (i == 2) {
+        k.SetVec3D(0,a.w - b.w, a.e - b.e);
+        k.SetVec3D();
+    }
+    else if (i == 3) {
+        k.SetVec3D(0,0, a.e - b.e);
+        k.SetVec3D();
+    }
+    else // i == 1
+    {
+        k.SetVec3D(a.q - b.q, a.w - b.w, a.e - b.e);
+        k.SetVec3D();
+    }
+    return k;
+}
+
 
 void Vector3D::ShowVec3D(){
     printf("X: %5.3f Y: %5.3f Z: %5.3f \n",x,y,z);
@@ -76,21 +94,33 @@ void Matrix3D::MatMultiply(int i , double p) {
 
 bool Matrix3D::isFullRank()
 {
-    // a <-> b 비교
-    double p = this->arr[0].q / this->arr[0].w;
+    // 1열 비교
+    double p = this->arr[0].q / this->arr[1].q;
     MatMultiply(1, p);
-    MatMultiply(2, p);
+    double q = this->arr[0].q / this->arr[2].q;
+    MatMultiply(2, q);
     // ShowMat3D(); // --> matrix plus 테스트
 
     Vector3D k = PlusVec3D(arr[0], arr[1]);
-
     // k.ShowVec3D(); // -->vector plus 테스트
+    Vector3D r2c1r1c1 = MinusVec3D(arr[1], arr[0]);
+    r2c1r1c1.ShowVec3D();
 
+    Vector3D r3c1r1c1 = MinusVec3D(arr[2], arr[0]);
+    r3c1r1c1.ShowVec3D();
 
-    // a <-> c 비교
+    // 2열 비교
+    double t = this->arr[0].w / this->arr[1].w;
+    MatMultiply(1, t);
+    double y = this->arr[0].w / this->arr[2].w;
+    MatMultiply(2, y);
 
     // b <-> c 비교
+    Vector3D r2c2r1c2 = MinusVec3D(arr[1], arr[0], 2);
+    r2c2r1c2.ShowVec3D();
 
+    Vector3D r3c2r1c2 = MinusVec3D(arr[2], arr[0], 2);
+    r3c2r1c2.ShowVec3D();
 
     return true;
 }

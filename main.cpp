@@ -13,7 +13,7 @@ void VectorTest();
 int main(){
     Vector3D a,b,c;
     a.SetVec3D(8.0,4.0,4.0);
-    b.SetVec3D(4.0,2.0,1.0);
+    b.SetVec3D(4.0,4.0,1.0);
     c.SetVec3D(2.0,2.0,1.0);
     VectorTest(); 
 

@@ -19,9 +19,9 @@ int main(){
 
     Matrix3D m;    
     m.SetMat3D(a,b,c);
-    m.ShowMat3D();
+    //m.ShowMat3D();
     bool tf = m.isFullRank();
-    m.ShowMat3D();
+    //m.ShowMat3D();
 
     return 0;
 }

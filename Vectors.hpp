@@ -11,6 +11,9 @@ public:
     void ShowVec3D();
     double dot(Vector3D v);
     double Scale();
+    Vector3D PlusVec3D(Vector3D a, Vector3D b);
+    Vector3D MinusVec3D(Vector3D a, Vector3D b);
+
 };
 
 // 3x3 matrix.

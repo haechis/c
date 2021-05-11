@@ -19,6 +19,20 @@ void Vector3D::SetVec3D(){
     e = this->z;
 }
 
+Vector3D Vector3D::PlusVec3D(Vector3D a, Vector3D b) {
+    Vector3D k;
+    k.SetVec3D(a.q + b.q, a.w + b.w, a.e + b.e);
+    k.SetVec3D();
+    return k;
+}
+
+Vector3D Vector3D::MinusVec3D(Vector3D a, Vector3D b) {
+    Vector3D k;
+    k.SetVec3D(a.q - b.q, a.w - b.w, a.e - b.e);
+    k.SetVec3D();
+    return k;
+}
+
 void Vector3D::ShowVec3D(){
     printf("X: %5.3f Y: %5.3f Z: %5.3f \n",x,y,z);
 }
@@ -64,9 +78,13 @@ bool Matrix3D::isFullRank()
 {
     // a <-> b 비교
     double p = this->arr[0].q / this->arr[0].w;
-    
     MatMultiply(1, p);
     MatMultiply(2, p);
+    // ShowMat3D(); // --> matrix plus 테스트
+
+    Vector3D k = PlusVec3D(arr[0], arr[1]);
+
+    // k.ShowVec3D(); // -->vector plus 테스트
 
 
     // a <-> c 비교
